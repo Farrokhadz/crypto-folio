@@ -1,8 +1,11 @@
+import { AuthProvider } from "./features/auth/AuthContext";
+import AppRoutes from "./routes/AppRoutes";
+
 function App() {
   return (
-    <div>
-      <h1>Ecom Panel</h1>
-    </div>
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>
   );
 }
 
