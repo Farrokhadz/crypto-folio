@@ -1,9 +1,11 @@
 import { Routes, Route } from "react-router-dom";
+import LandingPage from "../features/auth/LandingPage";
 import { AuthSplitCard } from "../features/auth/AuthSplitCard";
 
 function AppRoutes() {
   return (
     <Routes>
+      <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<AuthSplitCard />} />
       <Route path="/dashboard" element={<div>Dashboard</div>} />
       <Route path="/portfolio" element={<div>Portfolio</div>} />
