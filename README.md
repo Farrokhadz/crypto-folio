@@ -1,93 +1,41 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# CryptoFolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack crypto portfolio and trading companion, built to track holdings, watch the market, and journal every trade — all in one place.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+CryptoFolio is a personal-use web app for crypto traders. Instead of juggling spreadsheets and multiple apps, it brings portfolio tracking, a watchlist with price alerts, and a trading journal together in a single, focused dashboard.
 
-## React Compiler
+This project was built as a hands-on way to deepen React and TypeScript skills through a real, end-to-end application — from database design to a polished, responsive UI.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Authentication** — secure sign up / sign in with Supabase Auth
+- **Portfolio** — track your holdings and see total value at a glance
+- **Watchlist** — follow coins you care about and set price alerts
+- **Trading Journal** — log every trade and review performance over time
+- **Row Level Security** — each user only ever sees their own data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Frontend**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React + TypeScript
+- Vite
+- Tailwind CSS v4
+- React Router
+- Framer Motion
+- Lucide Icons
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Backend / Data**
 
-```
+- Supabase (PostgreSQL, Auth, Row Level Security)
+- TanStack Query _(planned)_
+- Zustand _(planned)_
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Tooling**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ESLint
+- Git / GitHub
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-=======
-ECOM-Panel
-
-A full-stack e-commerce application featuring a customer-facing storefront 
-and a complete admin management panel. Built to demonstrate modern React 
-patterns including TypeScript, server-state management, form validation, 
-and real-time data with Supabase.
-
-Features:
-- Customer storefront with product browsing and shopping cart
-- Admin dashboard with sales analytics and inventory management
-- Role-based authentication (customer / admin)
-- Order management and tracking
-
-Tech stack: React, TypeScript, Vite, Supabase, TanStack Query, 
-Zustand, React Hook Form, Zod, Tailwind CSS
->>>>>>> 066f48340e54dafede03904e6c5603139761ae45
+## Project Structure
