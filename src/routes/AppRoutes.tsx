@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import LandingPage from "../features/auth/LandingPage";
 import { AuthSplitCard } from "../features/auth/AuthSplitCard";
 import ProtectedRoute from "../features/auth/ProtectedRoute";
+import AppShell from "../components/AppShell";
+import DashboardPage from "../features/dashboard/DashboardPage";
 
 function AppRoutes() {
   return (
@@ -10,37 +12,26 @@ function AppRoutes() {
       <Route path="/login" element={<AuthSplitCard />} />
 
       <Route
-        path="/dashboard"
         element={
           <ProtectedRoute>
-            <div>Dashboard</div>
+            <AppShell />
           </ProtectedRoute>
         }
-      />
-      <Route
-        path="/portfolio"
-        element={
-          <ProtectedRoute>
-            <div>Portfolio</div>
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/watchlist"
-        element={
-          <ProtectedRoute>
-            <div>Watchlist</div>
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/journal"
-        element={
-          <ProtectedRoute>
-            <div>Journal</div>
-          </ProtectedRoute>
-        }
-      />
+      >
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route
+          path="/portfolio"
+          element={<div className="text-white">Portfolio</div>}
+        />
+        <Route
+          path="/watchlist"
+          element={<div className="text-white">Watchlist</div>}
+        />
+        <Route
+          path="/journal"
+          element={<div className="text-white">Journal</div>}
+        />
+      </Route>
     </Routes>
   );
 }
