@@ -105,3 +105,6 @@ export default function AuthSplitCard() {
   const isRTL = lang === "fa";
   const c = colors[theme];
 }
+useEffect(() => {
+  document.documentElement.classList.toggle("dark", theme === "dark");
+}, [theme]);
