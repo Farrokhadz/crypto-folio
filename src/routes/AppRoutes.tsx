@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import LandingPage from "../features/auth/LandingPage";
-import { AuthSplitCard } from "../features/auth/AuthSplitCard";
+import AuthSplitCard from "../features/auth/AuthSplitCard";
 import ProtectedRoute from "../features/auth/ProtectedRoute";
 import AppShell from "../components/AppShell";
 import DashboardPage from "../features/dashboard/DashboardPage";
