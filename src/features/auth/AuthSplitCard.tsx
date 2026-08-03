@@ -54,3 +54,38 @@ const t = {
 export default function AuthSplitCard() {
   return null; // placeholder
 }
+//Dark and light theme colors
+const colors = {
+  light: {
+    pageBg: "#F7FAF9",
+    cardBg: "#FFFFFF",
+    inputBg: "#F7FAF9",
+    border: "rgba(0,0,0,0.08)",
+    text: "#0A130F",
+    muted: "rgba(0,0,0,0.45)",
+    accent: "#059669",
+    accentLight: "#10B981",
+    accentGlow: "rgba(5,150,105,0.15)",
+    danger: "#DC2626",
+    dangerText: "#DC2626",
+    success: "#16A34A",
+    white: "#FFFFFF",
+    googleBg: "#F7FAF9",
+  },
+  dark: {
+    pageBg: "#0A130F",
+    cardBg: "#101B16",
+    inputBg: "#0A130F",
+    border: "rgba(255,255,255,0.06)",
+    text: "#FFFFFF",
+    muted: "rgba(255,255,255,0.45)",
+    accent: "#10B981",
+    accentLight: "#34D399",
+    accentGlow: "rgba(16,185,129,0.15)",
+    danger: "#F87171",
+    dangerText: "#F87171",
+    success: "#4ADE80",
+    white: "#FFFFFF",
+    googleBg: "#0A130F",
+  },
+};
