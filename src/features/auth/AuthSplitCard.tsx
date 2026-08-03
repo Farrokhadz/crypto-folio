@@ -51,9 +51,6 @@ const t = {
   },
 };
 
-export default function AuthSplitCard() {
-  return null; // placeholder
-}
 //Dark and light theme colors
 const colors = {
   light: {
@@ -89,3 +86,5 @@ const colors = {
     googleBg: "#0A130F",
   },
 };
+
+export default function AuthSplitCard() {}
