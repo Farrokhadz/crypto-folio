@@ -87,4 +87,21 @@ const colors = {
   },
 };
 
-export default function AuthSplitCard() {}
+export default function AuthSplitCard() {
+  const [isSignIn, setIsSignIn] = useState(true);
+  const [lang, setLang] = useState("fa");
+  const [theme, setTheme] = useState("dark");
+  const [showPass, setShowPass] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [confirmPass, setConfirmPass] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  const tr = t[lang];
+  const isRTL = lang === "fa";
+  const c = colors[theme];
+}
